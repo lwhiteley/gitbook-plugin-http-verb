@@ -37,20 +37,10 @@
   },
   "gitbook": {
     "properties": {
-      "defaultTabName": {
-        "type": "string",
-        "default": "Code",
-        "description": "a fallback tab name if no language is specied for a fenced code block"
-      },
-      "tabNameSeperator": {
-        "type": "string",
-        "default": "::",
-        "description": "a string delimeter that differentiates the language name from the tab name"
-      },
-      "rememberTabs": {
-        "type": "boolean",
-        "default": "false",
-        "description": "determines if the plugin will remember the selected tab, given the info in the codegroup has not changed"
+      "styles": {
+        "type": "object",
+        "default": null,
+        "description": "an object map of styles for each http verb. see example above on how to define."
       }
     }
   }
