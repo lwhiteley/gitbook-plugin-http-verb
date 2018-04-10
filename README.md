@@ -50,9 +50,9 @@ book.json
 
 `httpverb` takes an optional named/unnamed argument: 
 
-- `verb` (`string`): the http verb to display. eg. `get`, `put` and other [http verbs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+- `verb` (`string`): the http verb to display . eg. `get`, `put` and other [http verbs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods). Default: `get`
 
-**example**:
+**examples**:
 <pre>
 <code>
 {% httpverb "post" %} /api/users/`id` {% endhttpverb %}
