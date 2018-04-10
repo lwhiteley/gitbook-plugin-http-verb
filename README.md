@@ -60,6 +60,10 @@ book.json
 </code>
 </pre>
 
+### Sample output
+
+![output](https://i.imgur.com/3QfPz2x.png)
+
 Pull requests are welcome
 
 

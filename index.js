@@ -1,25 +1,26 @@
 const get = require('lodash/get');
 const trim = require('lodash/trim');
 const toStyleString = require('to-style').string
-const pretty = require('pretty');
+
+function minifyHtml(content) {
+    return content
+        .replace(/\r?\n|\r/g, '')
+        .replace(/[\t ]+\</g, "<")
+        .replace(/\>[\t ]+\</g, "><")
+        .replace(/\>[\t ]+$/g, ">");
+}
 
 module.exports = {
 
     // Extend ebook resources and html
     website: {
         assets: './book',
-        js: [
-            'plugin.js'
-        ],
         css: [
             'plugin.css'
         ],
     },
     book: {
         assets: './book',
-        js: [
-            'plugin.js'
-        ],
         css: [
             'plugin.css'
         ],
@@ -27,9 +28,6 @@ module.exports = {
 
     ebook: {
         assets: './book',
-        js: [
-            'plugin.js'
-        ],
         css: [
             'plugin.css'
         ],
@@ -46,11 +44,9 @@ module.exports = {
                 const style = toStyleString(get(opts, `styles.${verb}`));
 
                 return this.renderBlock('markdown', block.body).then((str) => {
-                    return pretty(`
+                    return minifyHtml(`
                         <div class="gbhv-verbpath">
-                            <span class="gbhv-verb gbhv-${verb.toLowerCase()}"${style ? ` style="${style}"` : ''}>
-                                ${verb.toUpperCase()}
-                            </span>
+                            <span class="gbhv-verb gbhv-${verb.toLowerCase()}"${style ? ` style="${style}"` : ''}>${verb.toUpperCase()}</span>
                             <span class="gbhv-path">${trim(str)}</span>
                         </div>
                     `);

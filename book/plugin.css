@@ -21,22 +21,6 @@
     display: inline-block;
   }
 
-  .gbhv-verb.gbhv-post {
-    background: #363763;
-  }
-
-  .gbhv-verb.gbhv-get {
-    background: #838383;
-  }
-
-  .gbhv-verb.gbhv-delete {
-    background: #960214;
-  }
-
-  .gbhv-verb.gbhv-put {
-    background: #3D4045;
-  }
-
   .gbhv-path {
     color: #555;
     font-weight: 700;
