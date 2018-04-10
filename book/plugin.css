@@ -29,6 +29,10 @@
     padding: .2em .25em;
     word-wrap: break-word;
   }
+  
+  .color-theme-2 .gbhv-path {
+    color: #bdcadb;
+  }
 
   .gbhv-path p {
     display: inline-block;
