@@ -3,8 +3,6 @@
     border-radius: 4px;
     margin-bottom: 2rem;
     position: relative;
-    width: calc(56%);
-    margin: 0 28px 25px;
     clear: inherit;
   }
   /* Request string */
@@ -12,9 +10,6 @@
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     color: #fff;
-    -ms-flex: 0 0 4rem;
-    -webkit-box-flex: 0;
-            flex: 0 0 4rem;
     font-size: 1em;
     font-weight: 600;
     line-height: 2.1;
@@ -48,4 +43,8 @@
     margin-left: .5em;
     padding: .2em .25em;
     word-wrap: break-word;
+  }
+
+  .gbhv-path p {
+      display: inline-block;
   }
