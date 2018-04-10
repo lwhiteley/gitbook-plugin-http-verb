@@ -4,9 +4,9 @@
     margin-bottom: 2rem;
     position: relative;
     clear: inherit;
-  }
-  /* Request string */
-  .gbhv-verb {
+}
+
+.gbhv-verb {
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     color: #fff;
@@ -19,22 +19,23 @@
     background: #838383;
     min-width: 100px;
     display: inline-block;
-  }
+}
 
-  .gbhv-path {
+.gbhv-path {
     color: #555;
     font-weight: 700;
     font-size: 1em;
     margin-left: .5em;
     padding: .2em .25em;
     word-wrap: break-word;
-  }
-  
-  .color-theme-2 .gbhv-path {
+}
+.gbhv-path p code {
+    color: darkred;
+}
+.color-theme-2 .gbhv-path {
     color: #bdcadb;
-  }
-
-  .gbhv-path p {
+}
+.gbhv-path p {
     display: inline-block;
     margin-bottom: 0;
-  }
+}
