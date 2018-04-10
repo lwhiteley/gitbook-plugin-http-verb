@@ -43,11 +43,11 @@ module.exports = {
                 const verb = trim(get(block, 'kwargs.verb', '') || get(block, 'args[0]', '') || 'get');
                 const style = toStyleString(get(opts, `styles.${verb}`));
 
-                return this.renderBlock('markdown', block.body).then((str) => {
+                return this.renderBlock('markdown', trim(block.body || '')).then((str) => {
                     return minifyHtml(`
                         <div class="gbhv-verbpath">
                             <span class="gbhv-verb gbhv-${verb.toLowerCase()}"${style ? ` style="${style}"` : ''}>${verb.toUpperCase()}</span>
-                            <span class="gbhv-path">${trim(str)}</span>
+                            <span class="gbhv-path">${str}</span>
                         </div>
                     `);
                 })
