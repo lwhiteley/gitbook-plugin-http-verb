@@ -62,7 +62,7 @@ book.json
 
 ### Sample output
 
-![output](https://i.imgur.com/3QfPz2x.png)
+![output](https://i.imgur.com/mGn2ddi.png)
 
 Pull requests are welcome
 
