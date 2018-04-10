@@ -14,10 +14,11 @@
     font-weight: 600;
     line-height: 2.1;
     margin: -1px;
-    padding: 5.5px;
-    padding-right: 1.2em;
+    padding: 1px;
     text-align: center;
     background: #838383;
+    min-width: 100px;
+    display: inline-block;
   }
 
   .gbhv-verb.gbhv-post {
