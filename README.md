@@ -1,4 +1,4 @@
-GitBook CodeGroup Plugin
+GitBook Http Verb Plugin
 ==============
 
 [![npm version](https://badge.fury.io/js/gitbook-plugin-http-verb.svg)](https://badge.fury.io/js/gitbook-plugin-http-verb)

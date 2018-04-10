@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-http-verb",
-  "description": "codegroup plugin for a styled http verb display",
+  "description": "gitbook plugin for a styled http verb display",
   "main": "index.js",
   "version": "0.0.5",
   "engines": {
