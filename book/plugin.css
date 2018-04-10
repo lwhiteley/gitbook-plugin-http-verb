@@ -46,5 +46,6 @@
   }
 
   .gbhv-path p {
-      display: inline-block;
+    display: inline-block;
+    margin-bottom: 0;
   }
