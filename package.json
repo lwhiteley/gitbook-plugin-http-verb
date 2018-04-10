@@ -1,0 +1,58 @@
+{
+  "name": "gitbook-plugin-http-verb",
+  "description": "codegroup plugin for a styled http verb display",
+  "main": "index.js",
+  "version": "0.0.0",
+  "engines": {
+    "gitbook": ">=2.3.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --timeout 35000 __tests__",
+    "postversion": "git push --follow-tags"
+  },
+  "homepage": "https://plugins.gitbook.com/plugin/http-verb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lwhiteley/gitbook-plugin-http-verb.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lwhiteley/gitbook-plugin-http-verb/issues"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "gitbook-tester": "^1.4.3",
+    "mocha": "^5.0.4"
+  },
+  "keywords": [
+    "gitbook",
+    "gitbook-plugin",
+    "http",
+    "plugin",
+    "verb"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "pretty": "^2.0.0",
+    "to-style": "^1.3.3"
+  },
+  "gitbook": {
+    "properties": {
+      "defaultTabName": {
+        "type": "string",
+        "default": "Code",
+        "description": "a fallback tab name if no language is specied for a fenced code block"
+      },
+      "tabNameSeperator": {
+        "type": "string",
+        "default": "::",
+        "description": "a string delimeter that differentiates the language name from the tab name"
+      },
+      "rememberTabs": {
+        "type": "boolean",
+        "default": "false",
+        "description": "determines if the plugin will remember the selected tab, given the info in the codegroup has not changed"
+      }
+    }
+  }
+}

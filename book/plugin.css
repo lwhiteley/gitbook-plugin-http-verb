@@ -1,0 +1,51 @@
+.gbhv-verbpath {
+    border: 1px solid #ECEBED;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    position: relative;
+    width: calc(56%);
+    margin: 0 28px 25px;
+    clear: inherit;
+  }
+  /* Request string */
+  .gbhv-verb {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #fff;
+    -ms-flex: 0 0 4rem;
+    -webkit-box-flex: 0;
+            flex: 0 0 4rem;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2.1;
+    margin: -1px;
+    padding: 5.5px;
+    padding-right: 1.2em;
+    text-align: center;
+    background: #838383;
+  }
+
+  .gbhv-verb.gbhv-post {
+    background: #363763;
+  }
+
+  .gbhv-verb.gbhv-get {
+    background: #838383;
+  }
+
+  .gbhv-verb.gbhv-delete {
+    background: #960214;
+  }
+
+  .gbhv-verb.gbhv-put {
+    background: #3D4045;
+  }
+
+  .gbhv-path {
+    color: #555;
+    font-weight: 700;
+    font-size: 1em;
+    margin-left: .5em;
+    padding: .2em .25em;
+    word-wrap: break-word;
+  }
