@@ -46,7 +46,9 @@ module.exports = {
                 return this.renderBlock('markdown', trim(block.body || '')).then((str) => {
                     return minifyHtml(`
                         <div class="gbhv-verbpath">
-                            <span class="gbhv-verb gbhv-${verb.toLowerCase()}"${style ? ` style="${style}"` : ''}>${verb.toUpperCase()}</span>
+                            <span class="gbhv-verb gbhv-${verb.toLowerCase()}"${style ? ` style="${style}"` : ''}>
+                                ${verb.toUpperCase()}
+                            </span>
                             <span class="gbhv-path">${str}</span>
                         </div>
                     `);
