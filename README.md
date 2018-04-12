@@ -2,7 +2,7 @@ GitBook Http Verb Plugin
 ==============
 
 [![npm version](https://badge.fury.io/js/gitbook-plugin-http-verb.svg)](https://badge.fury.io/js/gitbook-plugin-http-verb)
-[![Build Status](https://travis-ci.org/lwhiteley/gitbook-plugin-http-verb.svg?branch=master)](https://travis-ci.org/lwhiteley/gitbook-plugin-codegroup)
+[![Build Status](https://travis-ci.org/lwhiteley/gitbook-plugin-http-verb.svg?branch=master)](https://travis-ci.org/lwhiteley/gitbook-plugin-http-verb)
 
 ## Add Plugin
 
